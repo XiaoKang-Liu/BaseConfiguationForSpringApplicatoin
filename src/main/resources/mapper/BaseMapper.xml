@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.base.mapper.BaseMapper">
+    <resultMap id="BaseResultMap" type="com.base.entity.BaseEntity">
+        <id column="id_" jdbcType="INTEGER" property="id" />
+        <result column="creator_" jdbcType="VARCHAR" property="creator" />
+        <result column="rewriter_" jdbcType="VARCHAR" property="rewriter" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    </resultMap>
+</mapper>
