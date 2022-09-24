@@ -40,16 +40,16 @@ public class MybatisGenerator {
         /*注释生成器配置*/
         CommentGeneratorConfiguration commentGeneratorConfiguration = new CommentGeneratorConfiguration();
         commentGeneratorConfiguration.setConfigurationType("com.base.generator.EntityCommentGenerator");
-        commentGeneratorConfiguration.addProperty("name", "lxk");
+        commentGeneratorConfiguration.addProperty("name", "xxx");
         commentGeneratorConfiguration.addProperty("dateFormat", "yyyy/MM/dd HH:mm");
         context.setCommentGeneratorConfiguration(commentGeneratorConfiguration);
 
         /*jdbc 连接*/
         JDBCConnectionConfiguration jdbcConnectionConfig = new JDBCConnectionConfiguration();
         jdbcConnectionConfig.setDriverClass("com.mysql.jdbc.Driver");
-        jdbcConnectionConfig.setConnectionURL("jdbc:mysql://120.25.155.123:3306/test_distribution_cart_db?serverTimezone=Asia/Shanghai&characterEncoding=UTF-8");
-        jdbcConnectionConfig.setUserId("root");
-        jdbcConnectionConfig.setPassword("llkmysql");
+        jdbcConnectionConfig.setConnectionURL("jdbc:mysql://ip:port/dataBase?serverTimezone=Asia/Shanghai&characterEncoding=UTF-8");
+        jdbcConnectionConfig.setUserId("username");
+        jdbcConnectionConfig.setPassword("password");
         //针对mysql数据库无法读取表和字段备注
         jdbcConnectionConfig.addProperty("useInformationSchema", "true");
         //解决同一数据库含有多个重复表问题
